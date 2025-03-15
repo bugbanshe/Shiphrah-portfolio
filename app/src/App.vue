@@ -4,7 +4,7 @@
     <div class="mt-4">
       <RouterView />
     </div>
-    <Footer />
+    <!-- <Footer /> -->
   </div>
 </template>
 

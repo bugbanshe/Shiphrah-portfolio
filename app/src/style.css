@@ -1,0 +1,419 @@
+@keyframes glitch {
+    0% { text-shadow: 2px 2px 0 lime, -2px -2px 0 cyan; }
+    50% { text-shadow: -2px -2px 0 lime, 2px 2px 0 cyan; }
+    100% { text-shadow: 2px 2px 0 lime, -2px -2px 0 cyan; }
+  }
+  
+  .glitch {
+    animation: glitch 0.5s infinite alternate;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+/* Featured event cards */
+.event-card {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid lime;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+* Auto-scrolling brands */
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-top: 2px solid lime;
+    border-bottom: 2px solid lime;
+    position: relative;
+}
+
+.marquee-content {
+    display: flex;
+    animation: scroll 10s linear infinite;
+    gap: 40px;
+}
+
+.marquee-content img {
+    height: 60px;
+    width: auto;
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+
+.terminal {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid lime;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.link {
+  color: cyan;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: lime;
+}
+
+/* Profile Image Styling */
+img.rounded-full {
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50%;
+  }
+  
+  img.rounded-full:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  
+/* Newsletter Styling */
+.newsletter {
+  background: #222;
+  padding: 30px;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+input[type="email"] {
+  padding: 10px;
+  border: none;
+  width: 50%;
+  border-radius: 5px;
+}
+
+.subscribe-button {
+  background-color: lime;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.scrolling-wrapper {
+  display: flex;
+  overflow-x: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+}
+
+.scrolling-wrapper div {
+  display: inline-block;
+  margin-right: 20px;
+  animation: scroll 10s linear infinite;
+}
+
+.scrolling-wrapper img {
+  max-height: 50px;
+  margin: 0 15px;
+}
+
+/* Animation for moving logos */
+@keyframes scroll {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+/* Scrolling effect for brands */
+.scrolling-wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.scrolling-wrapper div {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scrollLoop {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+/* Styling Newsletter Form */
+.newsletter {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.email-input {
+  border: 2px solid lime;
+  background: black;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.subscribe-button {
+  background-color: lime;
+  color: black;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: #00ff00;
+}
+
+
+/* Scrolling effect for brands */
+.scrolling-wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.scrolling-wrapper div {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scrollLoop {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+/* Styling Newsletter Form */
+.newsletter {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.email-input {
+  border: 2px solid lime;
+  background: black;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.subscribe-button {
+  background-color: lime;
+  color: black;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.subscribe-button:hover {
+  background-color: #00ff00;
+}
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #111;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-content .name {
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+}
+
+/* Typing Effect */
+#changing-text {
+  display: inline-block;
+  border-right: 3px solid white;
+  padding-right: 5px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes cursor-blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+#changing-text::after {
+  content: "|";
+  animation: cursor-blink 0.7s infinite;
+}
+
+/* Tagline Styling */
+.tagline {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+
+/* Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #1a1a1a;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Name & Typing Effect */
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ff3366; /* Fun red-pink gradient */
+}
+
+.cursor {
+  font-size: 3rem;
+  color: #FF3860;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+/* Animated Text */
+.animated-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffdd57;
+}
+
+#changing-text {
+  font-weight: bold;
+  color: #ff4081;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  padding-right: 5px;
+  animation: typing 3s steps(30, end) infinite, blink 0.8s infinite;
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+/* Tagline */
+.tagline {
+  font-size: 1.3rem;
+  color: #f48fb1;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Buttons for Contact Links */
+.button {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  color: white;
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+/* Social Buttons */
+.linkedin {
+  background: linear-gradient(135deg, #0077b6, #00a8ff);
+}
+
+.twitter {
+  background: linear-gradient(135deg, #1DA1F2, #0077B5);
+}
+
+/* About Section */
+.about {
+  text-align: center;
+  background: #2c2c2c;
+  padding: 40px 20px;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.about p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about ul li {
+  font-size: 1.2rem;
+  color: #ffdd57;
+  margin-bottom: 10px;
+}
